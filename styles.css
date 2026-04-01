@@ -1173,39 +1173,96 @@ input, select { font-family: inherit; }
 /* ═══════════════════════════════════════════
    RESPONSIVE
    ═══════════════════════════════════════════ */
+@media (max-width: 1200px) {
+  .container { padding: 0 32px; }
+}
+
 @media (max-width: 1024px) {
   .product-grid { grid-template-columns: repeat(3, 1fr); }
   .footer-grid  { grid-template-columns: 1fr 1fr; gap: 32px; }
   .why-inner    { gap: 48px; }
+  .hero-content { padding: 0 40px; }
 }
 
 @media (max-width: 768px) {
-  :root { --nav-h: 60px; }
+  :root { --nav-h: 64px; }
 
   .nav-links { display: none; }
   .hamburger { display: flex; }
 
+  .hero { min-height: 500px; }
   .hero-content { padding: 0 24px; }
-  .hero-title   { font-size: 3rem; }
+  .hero-title   { font-size: clamp(2.8rem, 8vw, 4rem); }
+  .hero-sub     { font-size: 0.85rem; margin-bottom: 24px; }
 
-  .collection-tiles { grid-template-columns: repeat(2, 1fr); padding: 32px 16px; }
+  .collection-tiles { grid-template-columns: repeat(2, 1fr); padding: 32px 24px; gap: 20px;}
 
-  .product-grid { grid-template-columns: repeat(2, 1fr); }
+  .product-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .section-header { flex-direction: column; gap: 12px; margin-bottom: 28px; }
+  .section-header h2 { font-size: 1.8rem; }
 
+  .why-section { padding: 60px 0; }
   .why-inner    { grid-template-columns: 1fr; gap: 40px; }
+  .why-text h2 { font-size: 2.2rem; margin-bottom: 24px; }
   .why-img      { aspect-ratio: 4/3; }
 
-  .signup-inner { grid-template-columns: 1fr; gap: 32px; }
+  .lifestyle-banner { padding: 60px 24px; min-height: 400px; }
+  .lifestyle-content h2 { font-size: clamp(2rem, 6vw, 2.5rem); }
 
-  .footer-grid  { grid-template-columns: 1fr; }
-  .footer-bottom-inner { flex-direction: column; align-items: flex-start; }
+  .signup-section { padding: 60px 0; }
+  .signup-inner { grid-template-columns: 1fr; gap: 24px; }
+  .signup-text h2 { font-size: 1.8rem; }
 
-  .lifestyle-banner { padding: 80px 24px; }
+  .footer-grid  { grid-template-columns: 1fr; padding: 48px 0 32px; gap: 32px; }
+  .footer-bottom-inner { flex-direction: column; align-items: flex-start; gap: 16px; }
 
-  .section-header h2 { font-size: 1.8rem; }
+  .search-inner input { font-size: 1.25rem; }
 }
 
 @media (max-width: 480px) {
-  .product-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
-  .announce-bar { font-size: .75rem; }
+  .container { padding: 0 16px; }
+  
+  .announce-bar { font-size: .7rem; padding: 6px 36px 6px 16px; height: auto; min-height: var(--announce-h); line-height: 1.4; }
+  .announce-close { right: 12px; font-size: 1.1rem; }
+
+  .hero { min-height: 440px; }
+  .hero-content { padding: 0 16px; }
+  .hero-eyebrow { font-size: 0.7rem; margin-bottom: 12px;}
+  .hero-title { font-size: clamp(2.2rem, 10vw, 2.8rem); line-height: 1.05; margin-bottom: 16px; }
+  .btn-hero { padding: 12px 24px; font-size: 0.75rem; width: 100%; text-align: center; }
+
+  .collection-tiles { gap: 12px; padding: 24px 16px; }
+  .tile span { font-size: 0.7rem; }
+  
+  .products-section { padding: 40px 0 60px; }
+  .product-grid { gap: 12px; }
+  .product-img { padding: 12px; }
+  .product-info h3 { font-size: 0.8rem; }
+  .product-price { font-size: 0.8rem; }
+  .badge { font-size: 0.6rem; padding: 2px 8px; }
+  .quick-add { padding: 8px; font-size: 0.65rem; }
+
+  .why-list li { gap: 12px; }
+  .why-list strong { font-size: 0.85rem; }
+  .why-list p { font-size: 0.8rem; }
+
+  .lifestyle-banner { padding: 40px 16px; min-height: 360px; }
+  .lifestyle-content p { font-size: 0.85rem; margin-bottom: 24px; }
+  .btn-light { padding: 12px 24px; font-size: 0.75rem; width: 100%; text-align: center; }
+
+  .signup-text h2 { font-size: 1.5rem; }
+  .signup-text p { font-size: 0.85rem; }
+  .signup-form input { padding: 12px 16px; font-size: 0.85rem; }
+  .btn-primary { padding: 12px 24px; font-size: 0.75rem; }
+  
+  .footer-brand .footer-logo { font-size: 1.4rem; }
+  .footer-brand p { margin-bottom: 16px; }
+  .footer-col h4 { font-size: 0.7rem; }
+  .footer-col a { font-size: 0.8rem; }
+  .payment-methods span { font-size: 0.65rem; padding: 4px 8px; }
+}
+
+@media (max-width: 360px) {
+  .product-grid { grid-template-columns: 1fr; }
+  .collection-tiles { grid-template-columns: 1fr; }
 }
