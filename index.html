@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Everyday Jewelry in 18k Gold Plating &amp; Rhodium Silver | Aurina</title>
+  <meta name="description" content="Everyday jewelry in 18k gold plating and rhodium-plated sterling silver. Hypoallergenic and water-resistant, designed for daily wear. 2-year warranty." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ══ ANNOUNCEMENT BAR ══ -->
+  <div class="announce-bar" id="announce">
+    <p>Fast EU shipping · Easy returns &nbsp;|&nbsp; <strong>Free shipping</strong> on orders over €75</p>
+    <button class="announce-close" id="announce-close" aria-label="Close">×</button>
+  </div>
+
+  <!-- ══ NAVIGATION ══ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-top">
+      <div class="nav-left">
+        <!-- Hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+        <!-- Desktop mega nav -->
+        <ul class="nav-links" id="desktop-nav">
+          <li class="has-mega">
+            <a href="#" class="nav-link">Shop <span class="chevron">›</span></a>
+            <div class="mega-menu">
+              <div class="mega-col">
+                <h4>New &amp; Popular</h4>
+                <a href="#products">New Arrivals</a>
+                <a href="#products">Best Sellers</a>
+                <a href="#products">Gift Cards</a>
+              </div>
+              <div class="mega-col">
+                <h4>All Jewelry</h4>
+                <a href="#products">Shop All</a>
+                <a href="#products">Gold Plated</a>
+                <a href="#products">Sterling Silver</a>
+              </div>
+              <div class="mega-col">
+                <h4>By Category</h4>
+                <a href="#products">Rings</a>
+                <a href="#products">Earrings</a>
+                <a href="#products">Necklaces</a>
+                <a href="#products">Bracelets</a>
+              </div>
+              <div class="mega-col">
+                <h4>Earring Styles</h4>
+                <a href="#products">Hoop Earrings</a>
+                <a href="#products">Huggie Earrings</a>
+                <a href="#products">Stud Earrings</a>
+                <a href="#products">Drop Earrings</a>
+                <a href="#products">Cubic Zirconia</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="#products" class="nav-link">New Arrivals</a></li>
+          <li><a href="#products" class="nav-link">Best Sellers</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+        </ul>
+      </div>
+
+      <a href="#" class="logo">Aurina</a>
+
+      <div class="nav-right">
+        <button class="icon-btn" aria-label="Search" id="search-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </button>
+        <button class="icon-btn" aria-label="Account">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </button>
+        <button class="icon-btn cart-btn" aria-label="Cart" id="cart-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="cart-count" id="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-inner">
+      <button class="mobile-close" id="mobile-close">×</button>
+      <ul>
+        <li><a href="#products">New Arrivals</a></li>
+        <li><a href="#products">Best Sellers</a></li>
+        <li class="mobile-cat">
+          <strong>All Jewelry</strong>
+          <a href="#products">Shop All</a>
+          <a href="#products">Gold Plated</a>
+          <a href="#products">Sterling Silver</a>
+        </li>
+        <li class="mobile-cat">
+          <strong>Category</strong>
+          <a href="#products">Rings</a>
+          <a href="#products">Earrings</a>
+          <a href="#products">Necklaces</a>
+          <a href="#products">Bracelets</a>
+        </li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Search overlay -->
+  <div class="search-overlay" id="search-overlay">
+    <button class="search-close" id="search-close">×</button>
+    <div class="search-inner">
+      <input type="search" id="search-input" placeholder="Search for jewelry…" autocomplete="off" />
+      <div class="search-suggestions">
+        <span>Popular:</span>
+        <a href="#products">Rings</a>
+        <a href="#products">Hoop Earrings</a>
+        <a href="#products">Gold Necklace</a>
+        <a href="#products">Huggie Earrings</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cart drawer -->
+  <div class="cart-overlay" id="cart-overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button class="cart-drawer-close" id="cart-drawer-close">×</button>
+    </div>
+    <div class="cart-body" id="cart-body">
+      <div class="cart-empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="1"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <p>Your cart is empty</p>
+        <a href="#products" class="btn-primary" onclick="closeCart()">Start Shopping</a>
+      </div>
+    </div>
+    <div class="cart-footer hidden" id="cart-footer">
+      <div class="cart-total">
+        <span>Subtotal</span>
+        <span id="cart-total-price">€0,00</span>
+      </div>
+      <p class="cart-note">Taxes and shipping calculated at checkout</p>
+      <button class="btn-primary btn-full">Proceed to Checkout</button>
+    </div>
+  </aside>
+
+  <!-- ══ HERO ══ -->
+  <section class="hero" id="home">
+    <div class="hero-media">
+      <img src="images/hero.png" alt="Aurina jewelry lifestyle" class="hero-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">New Collection</p>
+      <h1 class="hero-title">Wear how<br/>you feel</h1>
+      <p class="hero-sub">18k gold plating · Sterling silver · Crafted in France</p>
+      <a href="#products" class="btn-hero">Find your pieces</a>
+    </div>
+  </section>
+
+  <!-- ══ COLLECTION TILES ══ -->
+  <section class="collection-tiles" id="categories">
+    <a href="#products" class="tile">
+      <div class="tile-img-wrap">
+        <img src="images/muna-earrings.png" alt="Earrings" />
+      </div>
+      <span>Earrings</span>
+    </a>
+    <a href="#products" class="tile">
+      <div class="tile-img-wrap">
+        <img src="images/lumi-necklace.png" alt="Necklaces" />
+      </div>
+      <span>Necklaces</span>
+    </a>
+    <a href="#products" class="tile">
+      <div class="tile-img-wrap">
+        <img src="images/zena-ring.png" alt="Rings" />
+      </div>
+      <span>Rings</span>
+    </a>
+    <a href="#products" class="tile">
+      <div class="tile-img-wrap">
+        <img src="images/raya-huggie.png" alt="Bracelets" />
+      </div>
+      <span>Bracelets</span>
+    </a>
+  </section>
+
+  <!-- ══ BEST SELLERS ══ -->
+  <section class="section products-section" id="products">
+    <div class="container">
+      <div class="section-header">
+        <h2>Best Sellers</h2>
+        <a href="#products" class="view-all">View all →</a>
+      </div>
+      <div class="product-grid">
+
+        <!-- Product 1 -->
+        <article class="product-card">
+          <div class="product-img-wrap">
+            <a href="#"><img src="images/zena-ring.png" alt="Zena Ring" class="product-img" /></a>
+            <div class="product-badges"><span class="badge badge-bestseller">Best Seller</span></div>
+            <button class="quick-add" data-name="Zena Ring" data-price="57.00" aria-label="Quick add Zena Ring">
+              Quick add
+            </button>
+          </div>
+          <div class="product-info">
+            <div class="product-swatches">
+              <span class="swatch swatch-gold active" title="Gold"></span>
+              <span class="swatch swatch-silver" title="Silver"></span>
+            </div>
+            <h3><a href="#">Zena Ring</a></h3>
+            <p class="product-price">€57,00</p>
+          </div>
+        </article>
+
+        <!-- Product 2 -->
+        <article class="product-card">
+          <div class="product-img-wrap">
+            <a href="#"><img src="images/muna-earrings.png" alt="Muna Earrings" class="product-img" /></a>
+            <div class="product-badges"><span class="badge badge-bestseller">Best Seller</span></div>
+            <button class="quick-add" data-name="Muna Earrings" data-price="51.00" aria-label="Quick add Muna Earrings">
+              Quick add
+            </button>
+          </div>
+          <div class="product-info">
+            <div class="product-swatches">
+              <span class="swatch swatch-gold active" title="Gold"></span>
+              <span class="swatch swatch-silver" title="Silver"></span>
+            </div>
+            <h3><a href="#">Muna Earrings</a></h3>
+            <p class="product-price">From €51,00</p>
+          </div>
+        </article>
+
+        <!-- Product 3 -->
+        <article class="product-card">
+          <div class="product-img-wrap">
+            <a href="#"><img src="images/lumi-necklace.png" alt="Lumi Necklace" class="product-img" /></a>
+            <div class="product-badges"><span class="badge badge-new">New</span></div>
+            <button class="quick-add" data-name="Lumi Necklace" data-price="62.00" aria-label="Quick add Lumi Necklace">
+              Quick add
+            </button>
+          </div>
+          <div class="product-info">
+            <div class="product-swatches">
+              <span class="swatch swatch-gold active" title="Gold"></span>
+            </div>
+            <h3><a href="#">Lumi Necklace</a></h3>
+            <p class="product-price">€62,00</p>
+          </div>
+        </article>
+
+        <!-- Product 4 -->
+        <article class="product-card">
+          <div class="product-img-wrap">
+            <a href="#"><img src="images/lia-earrings.png" alt="Lia Earrings" class="product-img" /></a>
+            <div class="product-badges"><span class="badge badge-bestseller">Best Seller</span></div>
+            <button class="quick-add" data-name="Lia Earrings" data-price="39.00" aria-label="Quick add Lia Earrings">
+              Quick add
+            </button>
+          </div>
+          <div class="product-info">
+            <div class="product-swatches">
+              <span class="swatch swatch-gold active" title="Gold"></span>
+              <span class="swatch swatch-silver" title="Silver"></span>
+            </div>
+            <h3><a href="#">Lia Earrings</a></h3>
+            <p class="product-price">From €39,00</p>
+          </div>
+        </article>
+
+        <!-- Product 5 -->
+        <article class="product-card">
+          <div class="product-img-wrap">
+            <a href="#"><img src="images/raya-huggie.png" alt="Raya Huggie Earrings" class="product-img" /></a>
+            <div class="product-badges"><span class="badge badge-bestseller">Best Seller</span></div>
+            <button class="quick-add" data-name="Raya Huggie Earrings" data-price="73.00" aria-label="Quick add Raya Huggie Earrings">
+              Quick add
+            </button>
+          </div>
+          <div class="product-info">
+            <div class="product-swatches">
+              <span class="swatch swatch-gold active" title="Gold"></span>
+            </div>
+            <h3><a href="#">Raya Huggie Earrings</a></h3>
+            <p class="product-price">€73,00</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ WHY AURINA ══ -->
+  <section class="why-section" id="about">
+    <div class="container why-inner">
+      <div class="why-text">
+        <h2>Why Aurina</h2>
+        <ul class="why-list">
+          <li>
+            <span class="why-icon">✦</span>
+            <div>
+              <strong>18-carat gold plating (3 microns)</strong>
+              <p>Durable plating with a rich, lasting gold tone</p>
+            </div>
+          </li>
+          <li>
+            <span class="why-icon">✦</span>
+            <div>
+              <strong>Rhodium-plated sterling silver</strong>
+              <p>Bright, refined and resistant to tarnishing</p>
+            </div>
+          </li>
+          <li>
+            <span class="why-icon">✦</span>
+            <div>
+              <strong>Hypoallergenic</strong>
+              <p>Gentle even for sensitive skin</p>
+            </div>
+          </li>
+          <li>
+            <span class="why-icon">✦</span>
+            <div>
+              <strong>Water &amp; tarnish resistant</strong>
+              <p>Designed for everyday wear</p>
+            </div>
+          </li>
+          <li>
+            <span class="why-icon">✦</span>
+            <div>
+              <strong>Crafted in France</strong>
+              <p>Designed with European savoir-faire</p>
+            </div>
+          </li>
+          <li>
+            <span class="why-icon">✦</span>
+            <div>
+              <strong>2-year warranty</strong>
+              <p>Full coverage on every piece</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="why-visual">
+        <img src="images/hero.png" alt="Aurina jewelry" class="why-img" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ LIFESTYLE BANNER ══ -->
+  <section class="lifestyle-banner">
+    <div class="lifestyle-overlay"></div>
+    <div class="lifestyle-content">
+      <h2>Jewelry that feels like you</h2>
+      <p>Pieces that match your rhythm, your mood, your day.</p>
+      <a href="#products" class="btn-light">Find your pieces</a>
+    </div>
+    <img src="images/hero.png" alt="Lifestyle" class="lifestyle-bg" />
+  </section>
+
+  <!-- ══ EMAIL SIGNUP ══ -->
+  <section class="signup-section" id="contact">
+    <div class="container signup-inner">
+      <div class="signup-text">
+        <h2>Subscribe for exclusive news &amp; early access</h2>
+        <p>Be the first to know about new collections, limited pieces, and special offers for subscribers.</p>
+      </div>
+      <form class="signup-form" id="signup-form" onsubmit="handleSignup(event)">
+        <input type="email" id="signup-email" placeholder="Your email address" required />
+        <button type="submit" class="btn-primary">Subscribe</button>
+        <p class="signup-success hidden" id="signup-success">✓ You're subscribed!</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo footer-logo">Aurina</a>
+        <p>Everyday jewelry in 18k gold plating and rhodium-plated sterling silver. Hypoallergenic and water-resistant.</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/profile.php?id=61576632802703" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/aurina.jewelry/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Customer Support</h4>
+        <ul>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Returns &amp; Refunds</a></li>
+          <li><a href="#">Shipping Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#products">New Arrivals</a></li>
+          <li><a href="#products">Best Sellers</a></li>
+          <li><a href="#products">Rings</a></li>
+          <li><a href="#products">Earrings</a></li>
+          <li><a href="#products">Necklaces</a></li>
+          <li><a href="#products">Bracelets</a></li>
+          <li><a href="#products">Gift Cards</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Refund Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Legal Notice</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-payments">
+      <div class="container">
+        <div class="payment-methods">
+          <span>Visa</span>
+          <span>Mastercard</span>
+          <span>PayPal</span>
+          <span>Apple Pay</span>
+          <span>Google Pay</span>
+          <span>Klarna</span>
+          <span>Shop Pay</span>
+          <span>Amex</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <span>© 2024 Aurina</span>
+        <div class="footer-lang">
+          <select id="lang-select" onchange="changeLang(this)">
+            <option value="en" selected>English</option>
+            <option value="nl">Nederlands</option>
+            <option value="de">Deutsch</option>
+            <option value="fr">Français</option>
+          </select>
+          <select id="country-select">
+            <option>Austria – EUR €</option>
+            <option>Belgium – EUR €</option>
+            <option>Germany – EUR €</option>
+            <option>France – EUR €</option>
+            <option>Netherlands – EUR €</option>
+            <option>Italy – EUR €</option>
+            <option>Spain – EUR €</option>
+          </select>
+        </div>
+        <span>Powered by Shopify</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
